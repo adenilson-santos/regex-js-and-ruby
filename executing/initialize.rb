@@ -5,9 +5,9 @@ puts text.match(regexNine)
 
 regexNine = %r{9}
 puts text.match(regexNine)
+puts text =~ regexNine
 
 regexLetters = /[a-f]/
-
 puts text.scan(regexLetters).join
 
 puts text.split(",").join
