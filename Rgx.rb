@@ -9,6 +9,11 @@ module Utils
             puts @text.scan(regex)
             puts "--------------------------"
         end
+
+        def replace(regex = /x/, another) 
+            puts @text.gsub! regex, another
+            puts "--------------------------"
+        end
     end
 
 end
